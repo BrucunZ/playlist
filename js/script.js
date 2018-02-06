@@ -1,3 +1,4 @@
+/*global $*/
 // quick fix for Cloud9 warning:
 /* global $ */
 
@@ -25,8 +26,8 @@ var mySong = {
 
 var myPlayList = [
 	{
-		"title":"24K Magic",
-		"artist":"Bruno Mars",
+		title: "title":"24K Magic",
+		artist: "artist":"Bruno Mars",
 		"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
 		"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
 	},
@@ -56,11 +57,14 @@ $( document ).ready(function() {
 });
 
 function displayList(){
-
+	
+myPlayList[0];
+$("#songs").append(myPlayList[0].title);
+$("#songs").append(myPlayList[0].artist);
 
   
 }
-
+displayList();
 function clearList(){
   
   
